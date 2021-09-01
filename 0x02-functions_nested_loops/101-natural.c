@@ -1,22 +1,27 @@
+#include "holberton.h"
 #include <stdio.h>
+#include <math.h>
+
 /**
- * main - sums of multiples of natural numbers < 1024
- * Return: 0 success
+ * main - main block
+ * Description: Print the sum of all multiples of 3 or 5 below 1024.
+ * Return: 0
  */
 int main(void)
 {
-int i, multiple, sum;
-int total = 0;
+	int i = 1;
+	int total = 0;
 
-for (i = 0; i < 1024; i++)
-{
-if (i % 3 == 0 || i % 5 == 0)
-{
-multiple = i;
-sum = total + multiple;
-total = sum;
-}
-}
-printf("%d\n", total);
-return (0);
+	while (i < 1024)
+	{
+		if (i % 3 == 0)
+			total += i;
+		else if (i % 5 == 0)
+			total += i;
+
+		i++;
+	}
+	printf("%d\n", total);
+
+	return (0);
 }
