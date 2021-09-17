@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * isInteger - checks if s is an integer
+ * @s: string to check
+ * Return: 0 or 1
+ */
 
 int isInteger(const char *s)
 {
